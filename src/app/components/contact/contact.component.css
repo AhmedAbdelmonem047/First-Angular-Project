@@ -1,0 +1,45 @@
+.contact {
+
+    padding-top: 120px;
+    padding-bottom: 60px;
+    background: linear-gradient(0deg, rgba(44, 63, 80, 1) 0%, rgba(27, 188, 157, 1) 51%, rgba(44, 63, 80, 1) 100%);
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #fff6;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #fff;
+    background-color: transparent !important;
+}
+
+label {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+input:focus+label {
+    color: #fff;
+}
+
+label::after {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.submitBtn {
+    background-color: #1BBC9D;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.submitBtn:hover {
+    background-color: #1bdbb5;
+}

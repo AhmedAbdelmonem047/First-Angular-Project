@@ -1,0 +1,32 @@
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(27, 188, 157, 0.9);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.overlay i {
+    color: #fff;
+    font-size: 96px;
+    line-height: 96px;
+    font-weight: 900;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}

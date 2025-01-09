@@ -1,0 +1,23 @@
+.not-found {
+    height: 87vh;
+    background: linear-gradient(0deg, rgba(44, 63, 80, 1) 0%, rgba(27, 188, 157, 1) 51%, rgba(44, 63, 80, 1) 100%);
+}
+
+.not-found h1 {
+    font-size: 96px;
+    color: #fff;
+}
+
+.homeBtn {
+    background-color: #2C3F50;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.homeBtn:hover {
+    background-color: #345572;
+}
+
+.not-found img {
+    width: 250px;
+}

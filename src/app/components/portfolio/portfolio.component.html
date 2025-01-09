@@ -1,0 +1,20 @@
+<div class="portfolio d-flex justify-content-center align-items-center">
+    <div class="container text-center">
+        <app-star [text]="'portfolio component'" [color]="'#fff'"></app-star>
+        <div class="container gallery py-3">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 g-4" *ngFor="let image of images">
+                    <app-portfolio-image [src]="image.src" [alt]="image.alt" class="img-fluid rounded"
+                        (click)="openModal(image.src)">
+                    </app-portfolio-image>
+                </div>
+            </div>
+            <div class="fullscreen-overlay position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
+                *ngIf="isModalOpen" (click)="closeModal()">
+                <div class="fullscreen-content" (click)="$event.stopPropagation()">
+                    <img [src]="selectedImage" alt="Fullscreen Image" class="fullscreen-image" />
+                    <button class="close-btn position-absolute" (click)="closeModal()">×</button>
+                </div>
+            </div>
+        </div>
+    </div>

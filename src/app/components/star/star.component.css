@@ -1,0 +1,16 @@
+h2 {
+    color: var(--selected-color);
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.star-line i {
+    color: var(--selected-color);
+}
+
+.line {
+    background-color: var(--selected-color);
+    height: 4px;
+    width: 80px;
+}

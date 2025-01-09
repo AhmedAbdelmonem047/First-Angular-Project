@@ -1,0 +1,20 @@
+.info {
+    background: linear-gradient(180deg, rgba(44, 63, 80, 1) 0%, rgba(16, 21, 27, 1) 90%);
+    color: #fff;
+}
+
+.icons li i {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.icons li i:hover {
+    background-color: #1BBC9D;
+    color: #fff;
+    ;
+}
+
+.copyright {
+    background-color: #10151b;
+    color: #fff;
+}
