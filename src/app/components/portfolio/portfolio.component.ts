@@ -11,12 +11,12 @@ import { NgFor, NgIf } from '@angular/common';
 })
 export class PortfolioComponent {
   images = [
-    { src: '/port1.png', alt: 'cottage' },
-    { src: '/port2.png', alt: 'chocolate pie' },
-    { src: '/port3.png', alt: 'circuis tent' },
-    { src: '/port1.png', alt: 'cottage' },
-    { src: '/port2.png', alt: 'chocolate pie' },
-    { src: '/port3.png', alt: 'circuis tent' }
+    { src: 'port1.png', alt: 'cottage' },
+    { src: 'port2.png', alt: 'chocolate pie' },
+    { src: 'port3.png', alt: 'circuis tent' },
+    { src: 'port1.png', alt: 'cottage' },
+    { src: 'port2.png', alt: 'chocolate pie' },
+    { src: 'port3.png', alt: 'circuis tent' }
   ];
 
   isModalOpen = false;
