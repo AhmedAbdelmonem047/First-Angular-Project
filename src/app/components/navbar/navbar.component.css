@@ -1,14 +1,15 @@
 .bg-blue {
-    background-color: #2C3F50 !important;
+    background-color: rgba(0, 0, 0, 0.7);
     --bs-navbar-color: #fff !important;
 }
 
 .navbar {
     padding: 24px 0;
-    transition: padding 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 8px 0;
 }
 
