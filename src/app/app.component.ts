@@ -15,21 +15,5 @@ import { FooterComponent } from "./components/footer/footer.component";
 })
 export class AppComponent {
   title = 'Assignment-13';
-  constructor(private router: Router, private titleService: Title) { }
-
-  ngOnInit() {
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe((event: NavigationEnd) => {
-      const currentRoute = this.router.routerState.snapshot.root;
-      let title = 'Angular'; // Default title
-
-      // Check the current route's data and assign the appropriate title
-      if (currentRoute.firstChild && currentRoute.firstChild.data['title']) {
-        title = currentRoute.firstChild.data['title'];
-      }
-
-      this.titleService.setTitle(title); // Update the browser's title
-    });
-  }
+  
 }
